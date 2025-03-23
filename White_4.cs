@@ -12,7 +12,7 @@ namespace Lab_7 {
                 _surname = surname;
             }
 
-            public virtual void Print() {
+            public void Print() {
                Console.WriteLine("Human's name: " + Name + "\tSurname: " + Surname); 
             }
         }
@@ -82,7 +82,7 @@ namespace Lab_7 {
                 Array.Copy(newArray, array, newArray.Length);
             }
 
-            public override void Print() {
+            public new void Print() {
                Console.WriteLine("Name: " + Name + "\tSurname: " + Surname + "\tTotal score: " + TotalScore); 
             }
 

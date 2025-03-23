@@ -10,7 +10,7 @@ namespace Lab_7 {
 
             // Статические поля
             private static int _normative;
-            private static int _activeJumpers;
+            private static int _jumpers;
             private static int _disqualified;
         
             // Свойства
@@ -21,7 +21,7 @@ namespace Lab_7 {
             public double JumpSum => _firstJump + _secondJump;
 
             //Статические свойства
-            public static int Jumpers => _activeJumpers;
+            public static int Jumpers => _jumpers;
             public static int Disqualified => _disqualified;
 
             // Конструктор
@@ -30,13 +30,13 @@ namespace Lab_7 {
                 _club = club;
                 _firstJump = 0;
                 _secondJump = 0;
-                _activeJumpers += 1;
+                _jumpers += 1;
             }
 
             // Статический конструктор
             static Participant() {
                 _normative = 5;
-                _activeJumpers = 0;
+                _jumpers = 0;
                 _disqualified = 0;
             }
 
@@ -87,8 +87,7 @@ namespace Lab_7 {
                 var qualified = participants.Where(
                     p => (p.FirstJump >= _normative && p.SecondJump >= _normative)
                     ).ToArray();
-                _disqualified = participants.Length - qualified.Length;
-                _activeJumpers = qualified.Length;
+                _disqualified += participants.Length - qualified.Length;
                 participants = qualified;
             }
         }
