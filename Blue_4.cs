@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using static System.Console;
 using System.Collections.ObjectModel;
 
-namespace Lab_6
+namespace Lab_7
 {
     public class Blue_4
     {
