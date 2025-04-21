@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using static System.Console;
 
-namespace Lab6
+namespace Lab7
 {
     public class Blue1
     {
