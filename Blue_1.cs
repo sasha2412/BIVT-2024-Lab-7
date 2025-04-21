@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using static System.Console;
 
-namespace Lab6
+namespace Lab7
 {
-    public class Blue1
+    public class Blue_1
     {
         public class Response
         {
